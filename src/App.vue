@@ -1,17 +1,22 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <LeftDiscs/>
+    <CenterDisc/>
+    <RightDiscs/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import LeftDiscs from './components/LeftDiscs.vue'
+import CenterDisc from './components/CenterDisc.vue'
+import RightDiscs from './components/RightDiscs.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    LeftDiscs,
+    CenterDisc,
+    RightDiscs
   }
 }
 </script>
