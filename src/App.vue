@@ -1,5 +1,8 @@
 <template>
   <div id="app">
+    <div>
+      <Board />
+    </div>
     <div class="puzzle-container">
       <LeftDiscs/>
       <CenterDisc/>
@@ -9,16 +12,19 @@
 </template>
 
 <script>
-import LeftDiscs from './components/LeftDiscs.vue'
-import CenterDisc from './components/CenterDisc.vue'
-import RightDiscs from './components/RightDiscs.vue'
+import LeftDiscs from './components/Board/LeftDiscs.vue'
+import CenterDisc from './components/Board/CenterDisc.vue'
+import RightDiscs from './components/Board/RightDiscs.vue'
+
+import Board from './components/Numbers/Board.vue';
 
 export default {
   name: 'App',
   components: {
     LeftDiscs,
     CenterDisc,
-    RightDiscs
+    RightDiscs,
+    Board
   }
 }
 </script>
