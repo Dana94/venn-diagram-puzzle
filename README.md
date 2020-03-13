@@ -1,5 +1,7 @@
 # venn-diagram-puzzle
 
+> A work-in-progress.
+
 ## Project setup
 ```
 yarn install
