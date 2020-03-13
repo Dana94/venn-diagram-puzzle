@@ -2,17 +2,23 @@
   <div class="left">
     <figure class="figure-1">
       <div class="numbers">
+        <div class="cap"></div>
         <div class="number sum10">10</div>
         <div class="number sum05">5</div>
       </div>
     </figure>
-    <figure class="figure-2"></figure>
+    <figure class="figure-2">
+      <div class="cap"></div>
+    </figure>
     <figure class="figure-3">
       <div class="numbers">
+        <div class="cap"></div>
         <div class="number sum07">7</div>
       </div>
     </figure>
-    <figure class="figure-4"></figure>
+    <figure class="figure-4">
+      <div class="cap"></div>
+    </figure>
   </div>
 </template>
 
@@ -64,25 +70,71 @@ figure {
 
 .figure-1 {
   position: absolute;
-  left: 30rem;
+  left: 15rem;
   top: 16rem;
 }
 
 .figure-2 {
   position: absolute;
-  left: 36rem;
+  left: 20rem;
   top: 8rem;
 }
 
 .figure-3 {
   position: absolute;
-  left: 30rem;
+  left: 15rem;
   top: 0;
 }
 
 .figure-4 {
   position: absolute;
-  left: 25rem;
+  left: 10.5rem;
   top: 8rem;
+}
+
+.left {
+  position: absolute;
+  top: 0;
+  left: 4rem;
+}
+
+.figure-1 .cap {
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  background-color: grey;
+  position: absolute;
+  left: 5rem;
+  top: 8.5rem;
+}
+
+.figure-2 .cap {
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  background-color: grey;
+  position: absolute;
+  left: 8rem;
+  top: 5.5rem;
+}
+
+.figure-3 .cap {
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  background-color: grey;
+  position: absolute;
+  left: 5.5rem;
+  top: 2.5rem;
+}
+
+.figure-4 .cap {
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  background-color: grey;
+  position: absolute;
+  left: 2rem;
+  top: 5.5rem;
 }
 </style>

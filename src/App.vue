@@ -1,8 +1,10 @@
 <template>
   <div id="app">
-    <LeftDiscs/>
-    <CenterDisc/>
-    <RightDiscs/>
+    <div class="puzzle-container">
+      <LeftDiscs/>
+      <CenterDisc/>
+      <RightDiscs/>
+    </div>
   </div>
 </template>
 
@@ -29,5 +31,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.puzzle-container {
+  position: relative;
+  margin-top: 6rem;
 }
 </style>

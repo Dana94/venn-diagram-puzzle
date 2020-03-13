@@ -27,7 +27,7 @@ figure {
   border-radius: 50%;
   border: 10px solid black;
   position: absolute;
-  left: 48rem;
+  left: 37rem;
   top: 8rem;
 }
 
