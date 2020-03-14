@@ -1,6 +1,6 @@
 <template>
   <div class="left">
-    <figure class="figure-1">
+    <!-- <figure class="figure-1">
       <div class="numbers">
         <div class="cap"></div>
         <div class="number sum10">10</div>
@@ -18,7 +18,7 @@
     </figure>
     <figure class="figure-4">
       <div class="cap"></div>
-    </figure>
+    </figure> -->
   </div>
 </template>
 
@@ -70,34 +70,39 @@ figure {
 
 .figure-1 {
   position: absolute;
-  left: 15rem;
+  left: 20rem;
   top: 16rem;
 }
 
 .figure-2 {
   position: absolute;
-  left: 20rem;
-  top: 8rem;
+  left: 28rem;
+  top: 16rem;
 }
 
 .figure-3 {
   position: absolute;
-  left: 15rem;
-  top: 0;
+  /* left: 15rem;
+  top: 0; */
+  left: 25%;
 }
 
 .figure-4 {
   position: absolute;
   left: 10.5rem;
-  top: 8rem;
+  top: 16rem;
 }
 
 .left {
-  position: absolute;
-  top: 0;
-  left: 4rem;
-}
+  border: 1px solid #27ef27;
 
+    height: 100%;
+}
+@media (min-width: 768px) {
+  .left {
+    width: 50%;
+  }
+}
 .figure-1 .cap {
   border-radius: 50%;
   width: 4rem;

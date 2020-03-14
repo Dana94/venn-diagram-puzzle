@@ -1,18 +1,18 @@
 <template>
     <div class="numbers-container">
-        <Number v-for="i in 9" :key="i.id" :value="i"/>
+        <!-- <Number v-for="i in 9" :key="i.id" :value="i"/> -->
     </div>
 </template>
 
 <script>
-import Number from './Number.vue';
+// import Number from './Number.vue';
 export default {
     data () {
         return {
         }
     },
     components: {
-        Number
+        // Number
     }
 }
 </script>
