@@ -1,0 +1,261 @@
+<template>
+  <div class>
+    <figure class="figure-1">
+      <div class="items">
+        <div class="cap"></div>
+        <div class="number sum10">10</div>
+        <div class="number sum05">5</div>
+      </div>
+    </figure>
+    <figure class="figure-2">
+      <div class="items">
+        <div class="cap"></div>
+      </div>
+    </figure>
+    <figure class="figure-3">
+      <div class="items">
+        <div class="cap"></div>
+        <div class="number sum07">7</div>
+      </div>
+    </figure>
+    <figure class="figure-4">
+      <div class="items">
+        <div class="cap"></div>
+      </div>
+    </figure>
+    <figure class="figure-5">
+      <div class="items">
+        <div class="cap"></div>
+        <div class="number sum13">13</div>
+      </div>
+    </figure>
+    <figure class="figure-6">
+      <div class="items">
+        <div class="cap"></div>
+        <div class="number sum10">10</div>
+      </div>
+    </figure>
+    <figure class="figure-7">
+      <div class="items">
+        <div class="cap"></div>
+      </div>
+    </figure>
+    <figure class="figure-8">
+      <div class="items">
+        <div class="cap"></div>
+        <div class="number sum23">23</div>
+      </div>
+    </figure>
+    <figure class="figure-9">
+      <div class="items">
+        <div class="cap"></div>
+      </div>
+    </figure>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "",
+  props: {
+    msg: String
+  }
+};
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+/* items */
+
+.number {
+  font-size: 25px;
+}
+
+.figure-1 .items,
+.figure-6 .items {
+  position: relative;
+}
+
+.figure-1 .sum10 {
+  position: absolute;
+  top: 1rem;
+  left: 7rem;
+}
+
+.figure-1 .sum05 {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+}
+
+.figure-3 .sum07 {
+  position: absolute;
+  bottom: 3rem;
+  left: 3rem;
+}
+
+.figure-5 .sum13 {
+  position: absolute;
+  top: 6rem;
+  right: 1rem;
+}
+.figure-6 .sum10 {
+  position: absolute;
+  top: 3rem;
+  left: 11rem;
+}
+
+.figure-8 .sum23 {
+  position: absolute;
+  bottom: 1rem;
+  left: 7rem;
+}
+/* figure */
+
+figure {
+  background-color: transparent;
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  border: 10px solid black;
+}
+
+.figure-1 {
+  position: absolute;
+  left: 9rem;
+  top: 14rem;
+}
+
+.figure-2 {
+  position: absolute;
+  left: 15rem;
+  top: 6rem;
+}
+
+.figure-3 {
+  position: absolute;
+  left: 9rem;
+  top: -2rem;
+}
+
+.figure-4 {
+  position: absolute;
+  left: 3.5rem;
+  top: 6rem;
+}
+
+.figure-5 {
+  position: absolute;
+  left: 27.5rem;
+  top: 6rem;
+}
+
+.figure-6 {
+  position: absolute;
+  left: 45.5rem;
+  top: 14rem;
+}
+
+.figure-7 {
+  position: absolute;
+  left: 51rem;
+  top: 6rem;
+}
+
+.figure-8 {
+  position: absolute;
+  left: 45rem;
+  top: -2rem;
+}
+
+.figure-9 {
+  position: absolute;
+  left: 39.5rem;
+  top: 6rem;
+}
+
+.left {
+  border: 1px solid #27ef27;
+  position: relative;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .left {
+    width: 50%;
+  }
+}
+
+/* caps */
+.cap {
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  background-color: grey;
+  position: absolute;
+}
+
+.figure-1 .cap {
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  background-color: grey;
+  position: absolute;
+  left: 5rem;
+  top: 8.5rem;
+}
+
+.figure-2 .cap {
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  background-color: grey;
+  position: absolute;
+  left: 7rem;
+  top: 5.5rem;
+}
+
+.figure-3 .cap {
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  background-color: grey;
+  position: absolute;
+  left: 5.5rem;
+  top: 2.5rem;
+}
+
+.figure-4 .cap {
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  background-color: grey;
+  position: absolute;
+  left: 2rem;
+  top: 5.5rem;
+}
+
+.figure-5 .cap {
+  left: 5.5rem;
+  top: 5rem;
+}
+
+.figure-6 .cap {
+  left: 5rem;
+  top: 8.5rem;
+}
+
+.figure-7 .cap {
+  left: 9rem;
+  top: 5.5rem;
+}
+
+.figure-8 .cap {
+  left: 5.5rem;
+  top: 2.5rem;
+}
+
+.figure-9 .cap {
+  left: 4rem;
+  top: 5.5rem;
+}
+</style>

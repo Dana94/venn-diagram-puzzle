@@ -5,24 +5,20 @@
         <Board />
       </div>
       <div class="puzzle-container">
-        <LeftDiscs />
-        <RightDiscs />
+        <Discs />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import LeftDiscs from './components/Board/LeftDiscs.vue'
-import RightDiscs from './components/Board/RightDiscs.vue'
-
+import Discs from './components/Board/Discs.vue'
 import Board from './components/Numbers/Board.vue';
 
 export default {
   name: 'App',
   components: {
-    LeftDiscs,
-    RightDiscs,
+    Discs,
     Board
   }
 }
@@ -44,24 +40,16 @@ export default {
   margin: 0 auto;
 }
 .puzzle-container {
-  /* position: relative;
-  width: 80%;
-  margin: 6rem auto 0 auto; */
+  position: relative;
+  border: 1px dashed green;
 
-  border: 1px solid black;
-  width: 100%;
-  height: 30rem;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  /* order: 2; */
+  transform-origin: 17rem 14rem;
+  transform: rotate(90deg);
 }
 
 .numbers-container {
   width: 100%;
   border: 1px dashed #d0d072;
-  /* height: 10rem; */
-  /* order: 1; */
 }
 @media (min-width: 768px) {
   .container {
@@ -69,14 +57,12 @@ export default {
     flex-direction: column;
   }
   .puzzle-container {
-    /* width: 80%; */
     display: flex;
     flex-direction: row;
-    /* order: 2; */
+    transform: rotate(0deg);
   }
 
   .numbers-container {
-    /* order: 1; */
     height: 10rem;
   }
 }
