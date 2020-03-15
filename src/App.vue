@@ -59,7 +59,9 @@ export default {
   .puzzle-container {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     transform: rotate(0deg);
+
   }
 
   .numbers-container {

@@ -1,5 +1,5 @@
 <template>
-  <div class>
+  <div class="container">
     <figure class="figure-1">
       <div class="items">
         <div class="cap"></div>
@@ -65,6 +65,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.container {
+    width: 85%;
+    position: relative;
+}
 /* items */
 
 .number {
@@ -114,64 +118,64 @@ export default {
 
 figure {
   background-color: transparent;
-  height: 15rem;
-  width: 15rem;
+  height: 13rem;
+  width: 13rem;
   border-radius: 50%;
   border: 10px solid black;
 }
 
 .figure-1 {
   position: absolute;
-  left: 9rem;
+  left: 5rem;
   top: 14rem;
 }
 
 .figure-2 {
   position: absolute;
-  left: 15rem;
-  top: 6rem;
+  left: 10rem;
+  top: 7rem;
 }
 
 .figure-3 {
   position: absolute;
-  left: 9rem;
-  top: -2rem;
+  left: 5rem;
+  top: 0rem;
 }
 
 .figure-4 {
   position: absolute;
-  left: 3.5rem;
-  top: 6rem;
+  left: 0rem;
+  top: 7rem;
 }
 
 .figure-5 {
   position: absolute;
-  left: 27.5rem;
-  top: 6rem;
+  left: 20.5rem;
+  top: 7rem;
 }
 
 .figure-6 {
   position: absolute;
-  left: 45.5rem;
+  left: 34.5rem;
   top: 14rem;
 }
 
 .figure-7 {
   position: absolute;
-  left: 51rem;
-  top: 6rem;
+  left: 39rem;
+  top: 7rem;
 }
 
 .figure-8 {
   position: absolute;
-  left: 45rem;
-  top: -2rem;
+  left: 34.5rem;
+  top: 0rem;
 }
 
 .figure-9 {
   position: absolute;
-  left: 39.5rem;
-  top: 6rem;
+  left: 30.5rem;
+  top: 7rem;
 }
 
 .left {
