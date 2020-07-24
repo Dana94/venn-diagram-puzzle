@@ -1,54 +1,54 @@
 <template>
-  <div class="container">
+  <div class="sub-container">
     <figure class="figure-1">
       <div class="items">
-        <div class="cap"></div>
+        <img src="../../assets/slot.svg" id="capA" class="cap" />
         <div class="number sum10">10</div>
         <div class="number sum05">5</div>
       </div>
     </figure>
     <figure class="figure-2">
       <div class="items">
-        <div class="cap"></div>
+        <img src="../../assets/slot.svg" id="capB" class="cap" />
       </div>
     </figure>
     <figure class="figure-3">
       <div class="items">
-        <div class="cap"></div>
+        <img src="../../assets/slot.svg" id="capC" class="cap" />
         <div class="number sum07">7</div>
       </div>
     </figure>
     <figure class="figure-4">
       <div class="items">
-        <div class="cap"></div>
+        <img src="../../assets/slot.svg" id="capD" class="cap" />
       </div>
     </figure>
     <figure class="figure-5">
       <div class="items">
-        <div class="cap"></div>
+        <img src="../../assets/slot.svg" id="capE" class="cap" />
         <div class="number sum13">13</div>
       </div>
     </figure>
     <figure class="figure-6">
       <div class="items">
-        <div class="cap"></div>
+        <img src="../../assets/slot.svg" id="capF" class="cap" />
         <div class="number sum10">10</div>
       </div>
     </figure>
     <figure class="figure-7">
       <div class="items">
-        <div class="cap"></div>
+        <img src="../../assets/slot.svg" id="capG" class="cap" />
       </div>
     </figure>
     <figure class="figure-8">
       <div class="items">
-        <div class="cap"></div>
+        <img src="../../assets/slot.svg" id="capH" class="cap" />
         <div class="number sum23">23</div>
       </div>
     </figure>
     <figure class="figure-9">
       <div class="items">
-        <div class="cap"></div>
+        <img src="../../assets/slot.svg" id="capI" class="cap" />
       </div>
     </figure>
   </div>
@@ -65,9 +65,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.container {
-    width: 85%;
-    position: relative;
+.sub-container {
+  width: 85%;
+  position: relative;
 }
 /* items */
 
@@ -82,8 +82,8 @@ export default {
 
 .figure-1 .sum10 {
   position: absolute;
-  top: 1rem;
-  left: 7rem;
+  top: 0rem;
+  left: 6rem;
 }
 
 .figure-1 .sum05 {
@@ -106,13 +106,13 @@ export default {
 .figure-6 .sum10 {
   position: absolute;
   top: 3rem;
-  left: 11rem;
+  left: 9rem;
 }
 
 .figure-8 .sum23 {
   position: absolute;
   bottom: 1rem;
-  left: 7rem;
+  left: 6rem;
 }
 /* figure */
 
@@ -261,5 +261,10 @@ figure {
 .figure-9 .cap {
   left: 4rem;
   top: 5.5rem;
+}
+
+.cap {
+  width: 4rem;
+  height: 4rem;
 }
 </style>

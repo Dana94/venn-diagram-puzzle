@@ -24,7 +24,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -38,6 +38,8 @@ export default {
   flex-direction: row-reverse;
   width: 80%;
   margin: 0 auto;
+  height: 90vh;
+  border: 1px solid;
 }
 .puzzle-container {
   position: relative;
