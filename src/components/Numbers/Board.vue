@@ -1,6 +1,6 @@
 <template>
-    <div class="numbers-container">
-        <Number v-for="i in 9" :key="i.id" :value="i"/>
+    <div id="numbers-container">
+        <Number v-for="i in 1" :key="i.id" :value="i"/>
     </div>
 </template>
 
@@ -18,8 +18,11 @@ export default {
 </script>
 
 <style>
-.numbers-container {
+#numbers-container {
     display: inline-flex;
     justify-content: center;
+
+    border: 1px dashed black;
+    height: 6rem;
 }
 </style>

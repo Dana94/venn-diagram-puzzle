@@ -1,35 +1,30 @@
 <template>
   <div id="app">
-    <div>
-      <Board />
-    </div>
-    <div class="puzzle-container">
-      <LeftDiscs/>
-      <CenterDisc/>
-      <RightDiscs/>
+    <div id="container">
+      <!-- <div class="numbers-container"> -->
+        <!-- <Board /> -->
+      <!-- </div> -->
+      <div class="puzzle-container">
+        <Discs />
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import LeftDiscs from './components/Board/LeftDiscs.vue'
-import CenterDisc from './components/Board/CenterDisc.vue'
-import RightDiscs from './components/Board/RightDiscs.vue'
-
-import Board from './components/Numbers/Board.vue';
+import Discs from './components/Board/Discs.vue'
+// import Board from './components/Numbers/Board.vue';
 
 export default {
   name: 'App',
   components: {
-    LeftDiscs,
-    CenterDisc,
-    RightDiscs,
-    Board
+    Discs,
+    // Board
   }
 }
 </script>
 
-<style>
+<style scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -38,9 +33,41 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-
+#container {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 80%;
+  margin: 0 auto;
+  height: 70vh;
+  border: 1px solid;
+}
 .puzzle-container {
   position: relative;
-  margin-top: 6rem;
+  border: 1px dashed green;
+
+  transform-origin: 17rem 14rem;
+  transform: rotate(90deg);
+}
+
+.numbers-container {
+  width: 100%;
+  border: 1px dashed #d0d072;
+}
+@media (min-width: 768px) {
+  #container {
+    display: flex;
+    flex-direction: column;
+  }
+  .puzzle-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transform: rotate(0deg);
+
+  }
+
+  /* .numbers-container {
+    height: 10rem;
+  } */
 }
 </style>

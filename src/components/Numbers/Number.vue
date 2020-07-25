@@ -1,19 +1,41 @@
 <template>
-  <div class="number" draggable="true" :value="value">
-    {{value}}
-  </div>
+  <!-- <div class="number-token" :value="value">{{value}}</div> -->
+  <img src="../../assets/token-1.svg" class="number-token" value="value"/>
 </template>
 
 <script>
+import {gsap} from 'gsap';
+import { Draggable } from "gsap/Draggable";
+
+gsap.registerPlugin(Draggable);
+
 export default {
-  props: ['value']
+  props: ['value'],
+  data () {
+    return {
+
+    }
+  },
+  mounted() {
+    // console.log(document.getElementsByClassName('number-token'))
+      Draggable.create(document.getElementsByClassName('number-token'), {
+        bounds: document.getElementById('container'),
+        type: "x,y",
+        liveSnap: {
+            //snaps to the closest point in the array, but only when it's within 15px (new in GSAP 1.20.0 release):
+            points: [{x: -253, y: 545}],
+            radius: 25
+        },
+        onDragEnd: function () {
+          console.log('done', this)
+        }
+      });
+  }
 }
 </script>
 
 <style scoped>
-.number {
-  border: 1px solid black;
-  border-radius: 50%;
+.number-token {
   width: 4rem;
   height: 4rem;
   display: flex;
@@ -22,8 +44,8 @@ export default {
   margin: 0 1rem;
 }
 
-.number:hover,
-.numbe:focus {
+.number-token:hover,
+.number-token:focus {
   cursor: pointer;
 }
 </style>
