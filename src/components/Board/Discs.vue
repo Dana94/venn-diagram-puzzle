@@ -57,8 +57,8 @@
 <script>
 export default {
   name: "",
-  props: {
-    msg: String
+  mounted() {
+    // console.log(document.getElementsByClassName('cap')[0].getBoundingClientRect())
   }
 };
 </script>

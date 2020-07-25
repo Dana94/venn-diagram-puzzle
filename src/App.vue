@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    <div class="container">
-      <div class="numbers-container">
-        <Board />
-      </div>
+    <div id="container">
+      <!-- <div class="numbers-container"> -->
+        <!-- <Board /> -->
+      <!-- </div> -->
       <div class="puzzle-container">
         <Discs />
       </div>
@@ -13,13 +13,13 @@
 
 <script>
 import Discs from './components/Board/Discs.vue'
-import Board from './components/Numbers/Board.vue';
+// import Board from './components/Numbers/Board.vue';
 
 export default {
   name: 'App',
   components: {
     Discs,
-    Board
+    // Board
   }
 }
 </script>
@@ -33,12 +33,12 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-.container {
+#container {
   display: flex;
   flex-direction: row-reverse;
   width: 80%;
   margin: 0 auto;
-  height: 90vh;
+  height: 70vh;
   border: 1px solid;
 }
 .puzzle-container {
@@ -54,7 +54,7 @@ export default {
   border: 1px dashed #d0d072;
 }
 @media (min-width: 768px) {
-  .container {
+  #container {
     display: flex;
     flex-direction: column;
   }
@@ -66,8 +66,8 @@ export default {
 
   }
 
-  .numbers-container {
+  /* .numbers-container {
     height: 10rem;
-  }
+  } */
 }
 </style>
